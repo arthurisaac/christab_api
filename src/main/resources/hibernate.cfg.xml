@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:8889/christaB_db</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <mapping class="com.bafagroupe.christab.modeles.Alerte"/>
+      <mapping class="com.bafagroupe.christab.modeles.Annonce"/>
+      <mapping class="com.bafagroupe.christab.modeles.Avis"/>
+      <mapping class="com.bafagroupe.christab.modeles.Demande"/>
+      <mapping class="com.bafagroupe.christab.modeles.Engin"/>
+      <mapping class="com.bafagroupe.christab.modeles.Historique"/>
+      <mapping class="com.bafagroupe.christab.modeles.Itineraire"/>
+      <mapping class="com.bafagroupe.christab.modeles.Paiement"/>
+      <mapping class="com.bafagroupe.christab.modeles.TypeFonction"/>
+      <mapping class="com.bafagroupe.christab.modeles.Utilisateur"/>
+    <mapping class="com.bafagroupe.christab.entities.Alerte"/>
+    <mapping class="com.bafagroupe.christab.entities.Annonce"/>
+    <mapping class="com.bafagroupe.christab.entities.Avis"/>
+    <mapping class="com.bafagroupe.christab.entities.Demande"/>
+    <mapping class="com.bafagroupe.christab.entities.Engin"/>
+    <mapping class="com.bafagroupe.christab.entities.Historique"/>
+    <mapping class="com.bafagroupe.christab.entities.Itineraire"/>
+    <mapping class="com.bafagroupe.christab.entities.Paiement"/>
+    <mapping class="com.bafagroupe.christab.entities.TypeFonction"/>
+    <mapping class="com.bafagroupe.christab.entities.Utilisateur"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
